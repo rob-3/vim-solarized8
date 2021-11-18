@@ -48,147 +48,147 @@ hi! link lCursor Cursor
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   if &background ==# 'dark'
-    let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5', '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
+    let g:terminal_ansi_colors = ['#002731', '#d01b24', '#728905', '#a57705', '#2075c7', '#c61b6e', '#259185', '#e9e2cb', '#001e26', '#bd3612', '#465a61', '#52676f', '#708183', '#5856b9', '#81908f', '#fdf6e3']
     if has('nvim')
-      let g:terminal_color_0 = '#073642'
-      let g:terminal_color_1 = '#dc322f'
-      let g:terminal_color_2 = '#859900'
-      let g:terminal_color_3 = '#b58900'
-      let g:terminal_color_4 = '#268bd2'
-      let g:terminal_color_5 = '#d33682'
-      let g:terminal_color_6 = '#2aa198'
-      let g:terminal_color_7 = '#eee8d5'
-      let g:terminal_color_8 = '#002b36'
-      let g:terminal_color_9 = '#cb4b16'
-      let g:terminal_color_10 = '#586e75'
-      let g:terminal_color_11 = '#657b83'
-      let g:terminal_color_12 = '#839496'
-      let g:terminal_color_13 = '#6c71c4'
-      let g:terminal_color_14 = '#93a1a1'
+      let g:terminal_color_0 = '#002731'
+      let g:terminal_color_1 = '#d01b24'
+      let g:terminal_color_2 = '#728905'
+      let g:terminal_color_3 = '#a57705'
+      let g:terminal_color_4 = '#2075c7'
+      let g:terminal_color_5 = '#c61b6e'
+      let g:terminal_color_6 = '#259185'
+      let g:terminal_color_7 = '#e9e2cb'
+      let g:terminal_color_8 = '#001e26'
+      let g:terminal_color_9 = '#bd3612'
+      let g:terminal_color_10 = '#465a61'
+      let g:terminal_color_11 = '#52676f'
+      let g:terminal_color_12 = '#708183'
+      let g:terminal_color_13 = '#5856b9'
+      let g:terminal_color_14 = '#81908f'
       let g:terminal_color_15 = '#fdf6e3'
     endif
     if s:termtrans
-      hi Normal guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-      hi CursorLine guifg=NONE guibg=NONE guisp=#586e75 gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+      hi Normal guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+      hi CursorLine guifg=NONE guibg=NONE guisp=#465a61 gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
       hi Terminal guifg=fg guibg=NONE gui=NONE cterm=NONE
-      hi ToolbarButton guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
+      hi ToolbarButton guifg=#81908f guibg=NONE gui=bold cterm=bold
       hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
     else " opaque
-      hi Normal guifg=#839496 guibg=#002b36 gui=NONE cterm=NONE
-      hi CursorLine guifg=NONE guibg=#073642 gui=NONE cterm=NONE
-      hi Terminal guifg=fg guibg=#002b36 gui=NONE cterm=NONE
-      hi ToolbarButton guifg=#93a1a1 guibg=#073642 gui=bold cterm=bold
-      hi ToolbarLine guifg=NONE guibg=#073642 gui=NONE cterm=NONE
+      hi Normal guifg=#708183 guibg=#001e26 gui=NONE cterm=NONE
+      hi CursorLine guifg=NONE guibg=#002731 gui=NONE cterm=NONE
+      hi Terminal guifg=fg guibg=#001e26 gui=NONE cterm=NONE
+      hi ToolbarButton guifg=#81908f guibg=#002731 gui=bold cterm=bold
+      hi ToolbarLine guifg=NONE guibg=#002731 gui=NONE cterm=NONE
     endif
     if get(g:, 'solarized_visibility', '') ==# 'high'
-      hi CursorLineNr guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-      hi NonText guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-      hi SpecialKey guifg=#cb4b16 guibg=NONE gui=reverse cterm=reverse
-      hi SpellBad guifg=#6c71c4 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-      hi SpellCap guifg=#6c71c4 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-      hi SpellLocal guifg=#b58900 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-      hi SpellRare guifg=#2aa198 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-      hi Title guifg=#b58900 guibg=NONE gui=bold cterm=bold
+      hi CursorLineNr guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+      hi NonText guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+      hi SpecialKey guifg=#bd3612 guibg=NONE gui=reverse cterm=reverse
+      hi SpellBad guifg=#5856b9 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+      hi SpellCap guifg=#5856b9 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+      hi SpellLocal guifg=#a57705 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+      hi SpellRare guifg=#259185 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+      hi Title guifg=#a57705 guibg=NONE gui=bold cterm=bold
     elseif get(g:, 'solarized_visibility', '') ==# 'low'
-      hi CursorLineNr guifg=#586e75 guibg=NONE gui=bold cterm=bold
-      hi NonText guifg=#073642 guibg=NONE gui=bold cterm=bold
-      hi SpecialKey guifg=#073642 guibg=NONE gui=reverse cterm=reverse
-      hi SpellBad guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-      hi SpellCap guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-      hi SpellLocal guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=underline
-      hi SpellRare guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=underline
-      hi Title guifg=#586e75 guibg=NONE gui=bold cterm=bold
+      hi CursorLineNr guifg=#465a61 guibg=NONE gui=bold cterm=bold
+      hi NonText guifg=#002731 guibg=NONE gui=bold cterm=bold
+      hi SpecialKey guifg=#002731 guibg=NONE gui=reverse cterm=reverse
+      hi SpellBad guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+      hi SpellCap guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+      hi SpellLocal guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=underline
+      hi SpellRare guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=underline
+      hi Title guifg=#465a61 guibg=NONE gui=bold cterm=bold
     else " normal visibility
-      hi CursorLineNr guifg=#839496 guibg=NONE gui=bold cterm=bold
-      hi NonText guifg=#657b83 guibg=NONE gui=bold cterm=bold
-      hi SpecialKey guifg=#657b83 guibg=#073642 gui=bold cterm=bold
-      hi SpellBad guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-      hi SpellCap guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-      hi SpellLocal guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=underline
-      hi SpellRare guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=underline
-      hi Title guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
+      hi CursorLineNr guifg=#708183 guibg=NONE gui=bold cterm=bold
+      hi NonText guifg=#52676f guibg=NONE gui=bold cterm=bold
+      hi SpecialKey guifg=#52676f guibg=#002731 gui=bold cterm=bold
+      hi SpellBad guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+      hi SpellCap guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+      hi SpellLocal guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=underline
+      hi SpellRare guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=underline
+      hi Title guifg=#bd3612 guibg=NONE gui=bold cterm=bold
     endif
     if get(g:, 'solarized_old_cursor_style', 0)
-      hi Cursor guifg=#002b36 guibg=#839496 gui=NONE cterm=NONE
+      hi Cursor guifg=#001e26 guibg=#708183 gui=NONE cterm=NONE
     else
-      hi Cursor guifg=#fdf6e3 guibg=#268bd2 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#2075c7 gui=NONE cterm=NONE
     endif
     if get(g:, 'solarized_diffmode', '') ==# 'high'
-      hi DiffAdd guifg=#859900 guibg=NONE gui=reverse cterm=reverse
-      hi DiffChange guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
-      hi DiffDelete guifg=#dc322f guibg=NONE gui=reverse cterm=reverse
-      hi DiffText guifg=#268bd2 guibg=NONE gui=reverse cterm=reverse
+      hi DiffAdd guifg=#728905 guibg=NONE gui=reverse cterm=reverse
+      hi DiffChange guifg=#a57705 guibg=NONE gui=reverse cterm=reverse
+      hi DiffDelete guifg=#d01b24 guibg=NONE gui=reverse cterm=reverse
+      hi DiffText guifg=#2075c7 guibg=NONE gui=reverse cterm=reverse
     elseif get(g:, 'solarized_diffmode', '') ==# 'low'
-      hi DiffAdd guifg=#859900 guibg=NONE guisp=#859900 gui=NONE cterm=NONE
-      hi DiffChange guifg=#b58900 guibg=NONE guisp=#b58900 gui=NONE cterm=NONE
-      hi DiffDelete guifg=#dc322f guibg=NONE gui=bold cterm=bold
-      hi DiffText guifg=#268bd2 guibg=NONE guisp=#268bd2 gui=NONE cterm=NONE
+      hi DiffAdd guifg=#728905 guibg=NONE guisp=#728905 gui=NONE cterm=NONE
+      hi DiffChange guifg=#a57705 guibg=NONE guisp=#a57705 gui=NONE cterm=NONE
+      hi DiffDelete guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+      hi DiffText guifg=#2075c7 guibg=NONE guisp=#2075c7 gui=NONE cterm=NONE
     else " normal diffmode
-      hi DiffAdd guifg=#859900 guibg=#073642 guisp=#859900 gui=NONE cterm=NONE
-      hi DiffChange guifg=#b58900 guibg=#073642 guisp=#b58900 gui=NONE cterm=NONE
-      hi DiffDelete guifg=#dc322f guibg=#073642 gui=bold cterm=bold
-      hi DiffText guifg=#268bd2 guibg=#073642 guisp=#268bd2 gui=NONE cterm=NONE
+      hi DiffAdd guifg=#728905 guibg=#002731 guisp=#728905 gui=NONE cterm=NONE
+      hi DiffChange guifg=#a57705 guibg=#002731 guisp=#a57705 gui=NONE cterm=NONE
+      hi DiffDelete guifg=#d01b24 guibg=#002731 gui=bold cterm=bold
+      hi DiffText guifg=#2075c7 guibg=#002731 guisp=#2075c7 gui=NONE cterm=NONE
     endif
     if get(g:, 'solarized_statusline', '') ==# 'low'
-      hi StatusLine guifg=#073642 guibg=#93a1a1 gui=bold,reverse cterm=bold,reverse
-      hi StatusLineNC guifg=#073642 guibg=#586e75 gui=reverse cterm=reverse
-      hi TabLineSel guifg=#93a1a1 guibg=#073642 gui=NONE cterm=NONE
-      hi NormalMode guifg=#073642 guibg=#93a1a1 gui=bold,reverse cterm=bold,reverse
+      hi StatusLine guifg=#002731 guibg=#81908f gui=bold,reverse cterm=bold,reverse
+      hi StatusLineNC guifg=#002731 guibg=#465a61 gui=reverse cterm=reverse
+      hi TabLineSel guifg=#81908f guibg=#002731 gui=NONE cterm=NONE
+      hi NormalMode guifg=#002731 guibg=#81908f gui=bold,reverse cterm=bold,reverse
     else
-      hi StatusLine guifg=#073642 guibg=#eee8d5 gui=reverse cterm=reverse
-      hi StatusLineNC guifg=#073642 guibg=#93a1a1 gui=reverse cterm=reverse
-      hi TabLineSel guifg=#eee8d5 guibg=#073642 gui=NONE cterm=NONE
-      hi NormalMode guifg=#073642 guibg=#eee8d5 gui=reverse cterm=reverse
+      hi StatusLine guifg=#002731 guibg=#e9e2cb gui=reverse cterm=reverse
+      hi StatusLineNC guifg=#002731 guibg=#81908f gui=reverse cterm=reverse
+      hi TabLineSel guifg=#e9e2cb guibg=#002731 gui=NONE cterm=NONE
+      hi NormalMode guifg=#002731 guibg=#e9e2cb gui=reverse cterm=reverse
     endif
-    hi ColorColumn guifg=NONE guibg=#073642 gui=NONE cterm=NONE
-    hi Conceal guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi CursorColumn guifg=NONE guibg=#073642 gui=NONE cterm=NONE
-    hi Directory guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+    hi ColorColumn guifg=NONE guibg=#002731 gui=NONE cterm=NONE
+    hi Conceal guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi CursorColumn guifg=NONE guibg=#002731 gui=NONE cterm=NONE
+    hi Directory guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
     hi EndOfBuffer guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ErrorMsg guifg=#dc322f guibg=#fdf6e3 gui=reverse cterm=reverse
-    hi FoldColumn guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-    hi Folded guifg=#839496 guibg=NONE guisp=#002b36 gui=bold cterm=bold
-    hi IncSearch guifg=#cb4b16 guibg=NONE gui=standout cterm=standout
-    hi LineNr guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi MatchParen guifg=#fdf6e3 guibg=#073642 gui=bold cterm=bold
-    hi ModeMsg guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi MoreMsg guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi Pmenu guifg=#839496 guibg=#073642 gui=NONE cterm=NONE
-    hi PmenuSbar guifg=NONE guibg=#073642 gui=NONE cterm=NONE
-    hi PmenuSel guifg=#eee8d5 guibg=#586e75 gui=NONE cterm=NONE
-    hi PmenuThumb guifg=NONE guibg=#586e75 gui=NONE cterm=NONE
-    hi Question guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-    hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
-    hi SignColumn guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-    hi TabLine guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
-    hi TabLineFill guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
-    hi VertSplit guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
-    hi Visual guifg=#586e75 guibg=#002b36 gui=reverse cterm=reverse
-    hi VisualNOS guifg=NONE guibg=#073642 gui=reverse cterm=reverse
-    hi WarningMsg guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi WildMenu guifg=#657b83 guibg=#eee8d5 gui=reverse cterm=reverse
-    hi Comment guifg=#586e75 guibg=NONE gui=italic cterm=italic
-    hi Constant guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
+    hi ErrorMsg guifg=#d01b24 guibg=#fdf6e3 gui=reverse cterm=reverse
+    hi FoldColumn guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+    hi Folded guifg=#708183 guibg=NONE guisp=#001e26 gui=bold cterm=bold
+    hi IncSearch guifg=#bd3612 guibg=NONE gui=standout cterm=standout
+    hi LineNr guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi MatchParen guifg=#fdf6e3 guibg=#002731 gui=bold cterm=bold
+    hi ModeMsg guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi MoreMsg guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi Pmenu guifg=#708183 guibg=#002731 gui=NONE cterm=NONE
+    hi PmenuSbar guifg=NONE guibg=#002731 gui=NONE cterm=NONE
+    hi PmenuSel guifg=#e9e2cb guibg=#465a61 gui=NONE cterm=NONE
+    hi PmenuThumb guifg=NONE guibg=#465a61 gui=NONE cterm=NONE
+    hi Question guifg=#259185 guibg=NONE gui=bold cterm=bold
+    hi Search guifg=#a57705 guibg=NONE gui=reverse cterm=reverse
+    hi SignColumn guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+    hi TabLine guifg=#465a61 guibg=#002731 gui=NONE cterm=NONE
+    hi TabLineFill guifg=#465a61 guibg=#002731 gui=NONE cterm=NONE
+    hi VertSplit guifg=#465a61 guibg=#002731 gui=NONE cterm=NONE
+    hi Visual guifg=#465a61 guibg=#001e26 gui=reverse cterm=reverse
+    hi VisualNOS guifg=NONE guibg=#002731 gui=reverse cterm=reverse
+    hi WarningMsg guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi WildMenu guifg=#52676f guibg=#e9e2cb gui=reverse cterm=reverse
+    hi Comment guifg=#465a61 guibg=NONE gui=italic cterm=italic
+    hi Constant guifg=#259185 guibg=NONE gui=NONE cterm=NONE
     hi CursorIM guifg=NONE guibg=fg gui=NONE cterm=NONE
-    hi Error guifg=#dc322f guibg=#fdf6e3 gui=bold,reverse cterm=bold,reverse
-    hi Identifier guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+    hi Error guifg=#d01b24 guibg=#fdf6e3 gui=bold,reverse cterm=bold,reverse
+    hi Identifier guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
     hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-    hi Special guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-    hi Statement guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-    hi Todo guifg=#d33682 guibg=NONE gui=bold cterm=bold
-    hi Type guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi InsertMode guifg=#073642 guibg=#2aa198 gui=bold,reverse cterm=bold,reverse
-    hi ReplaceMode guifg=#073642 guibg=#cb4b16 gui=bold,reverse cterm=bold,reverse
-    hi VisualMode guifg=#073642 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
-    hi CommandMode guifg=#073642 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
+    hi PreProc guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+    hi Special guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+    hi Statement guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+    hi Todo guifg=#c61b6e guibg=NONE gui=bold cterm=bold
+    hi Type guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi Underlined guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi InsertMode guifg=#002731 guibg=#259185 gui=bold,reverse cterm=bold,reverse
+    hi ReplaceMode guifg=#002731 guibg=#bd3612 gui=bold,reverse cterm=bold,reverse
+    hi VisualMode guifg=#002731 guibg=#c61b6e gui=bold,reverse cterm=bold,reverse
+    hi CommandMode guifg=#002731 guibg=#c61b6e gui=bold,reverse cterm=bold,reverse
     if !s:italics
       hi Comment gui=NONE cterm=NONE
     endif
     if has('nvim')
       hi! link TermCursor Cursor
-      hi TermCursorNC guifg=#002b36 guibg=#586e75 gui=NONE cterm=NONE
+      hi TermCursorNC guifg=#001e26 guibg=#465a61 gui=NONE cterm=NONE
     endif
     if !get(g:, 'solarized_extra_hi_groups', 0)
       unlet s:t_Co s:italics s:termtrans
@@ -200,180 +200,180 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi! link helpSpecial Special
     hi! link vimSet Normal
     hi! link vimSetEqual Normal
-    hi vimCommentString guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi vimCommand guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi vimCmdSep guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi helpExample guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-    hi helpOption guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi helpNote guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi helpVim guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi helpHyperTextJump guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi helpHyperTextEntry guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-    hi vimIsCommand guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi vimSynMtchOpt guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi vimSynType guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi vimHiLink guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi vimHiGroup guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi vimGroup guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+    hi vimCommentString guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi vimCommand guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi vimCmdSep guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi helpExample guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+    hi helpOption guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi helpNote guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi helpVim guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi helpHyperTextJump guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi helpHyperTextEntry guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+    hi vimIsCommand guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi vimSynMtchOpt guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi vimSynType guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi vimHiLink guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi vimHiGroup guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi vimGroup guifg=#2075c7 guibg=NONE gui=bold cterm=bold
     hi! link diffAdded Statement
     hi! link diffLine Identifier
-    hi gitcommitComment guifg=#586e75 guibg=NONE gui=italic cterm=italic
+    hi gitcommitComment guifg=#465a61 guibg=NONE gui=italic cterm=italic
     hi! link gitcommitUntracked gitcommitComment
     hi! link gitcommitDiscarded gitcommitComment
     hi! link gitcommitSelected gitcommitComment
-    hi gitcommitUnmerged guifg=#859900 guibg=NONE gui=bold cterm=bold
-    hi gitcommitOnBranch guifg=#586e75 guibg=NONE gui=bold cterm=bold
-    hi gitcommitBranch guifg=#d33682 guibg=NONE gui=bold cterm=bold
+    hi gitcommitUnmerged guifg=#728905 guibg=NONE gui=bold cterm=bold
+    hi gitcommitOnBranch guifg=#465a61 guibg=NONE gui=bold cterm=bold
+    hi gitcommitBranch guifg=#c61b6e guibg=NONE gui=bold cterm=bold
     hi! link gitcommitNoBranch gitcommitBranch
-    hi gitcommitdiscardedtype guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-    hi gitcommitselectedtype guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-    hi gitcommitHeader guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi gitcommitUntrackedFile guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-    hi gitcommitDiscardedFile guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi gitcommitSelectedFile guifg=#859900 guibg=NONE gui=bold cterm=bold
-    hi gitcommitUnmergedFile guifg=#b58900 guibg=NONE gui=bold cterm=bold
-    hi gitcommitFile guifg=#839496 guibg=NONE gui=bold cterm=bold
+    hi gitcommitdiscardedtype guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+    hi gitcommitselectedtype guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+    hi gitcommitHeader guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi gitcommitUntrackedFile guifg=#259185 guibg=NONE gui=bold cterm=bold
+    hi gitcommitDiscardedFile guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi gitcommitSelectedFile guifg=#728905 guibg=NONE gui=bold cterm=bold
+    hi gitcommitUnmergedFile guifg=#a57705 guibg=NONE gui=bold cterm=bold
+    hi gitcommitFile guifg=#708183 guibg=NONE gui=bold cterm=bold
     hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
     hi! link gitcommitSelectedArrow gitcommitSelectedFile
     hi! link gitcommitUnmergedArrow gitcommitUnmergedFile
-    hi htmlTag guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi htmlEndTag guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi htmlTagN guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
-    hi htmlTagName guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi htmlSpecialTagName guifg=#268bd2 guibg=NONE gui=italic cterm=italic
-    hi htmlArg guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi javaScript guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+    hi htmlTag guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi htmlEndTag guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi htmlTagN guifg=#81908f guibg=NONE gui=bold cterm=bold
+    hi htmlTagName guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi htmlSpecialTagName guifg=#2075c7 guibg=NONE gui=italic cterm=italic
+    hi htmlArg guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi javaScript guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
     hi! link jsFuncCall Function
-    hi perlHereDoc guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-    hi perlVarPlain guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi perlStatementFileDesc guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi texstatement guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi texmathzonex guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi texmathmatcher guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi texreflabel guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi rubyDefine guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
+    hi perlHereDoc guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+    hi perlVarPlain guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi perlStatementFileDesc guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi texstatement guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi texmathzonex guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi texmathmatcher guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi texreflabel guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi rubyDefine guifg=#81908f guibg=NONE gui=bold cterm=bold
     hi! link rubySymbol Type
-    hi rubyBoolean guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi cPreCondit guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-    hi VarId guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi ConId guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi hsImport guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi hsString guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi hsStructure guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hs_hlFunctionName guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi hsStatement guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hsImportLabel guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hs_OpFunctionName guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi hs_DeclareFunction guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-    hi hsVarSym guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hsType guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi hsTypedef guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hsModuleName guifg=#859900 guibg=NONE gui=NONE cterm=NONE
+    hi rubyBoolean guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi cPreCondit guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+    hi VarId guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi ConId guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi hsImport guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi hsString guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi hsStructure guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hs_hlFunctionName guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi hsStatement guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hsImportLabel guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hs_OpFunctionName guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi hs_DeclareFunction guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+    hi hsVarSym guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hsType guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi hsTypedef guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hsModuleName guifg=#728905 guibg=NONE gui=NONE cterm=NONE
     hi! link hsImportParams Delimiter
     hi! link hsDelimTypeExport Delimiter
     hi! link hsModuleStartLabel hsStructure
     hi! link hsModuleWhereLabel hsModuleStartLabel
-    hi hsNiceOperator guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi hsniceoperator guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
+    hi hsNiceOperator guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi hsniceoperator guifg=#259185 guibg=NONE gui=NONE cterm=NONE
     if !s:italics
       hi gitcommitComment gui=NONE cterm=NONE
       hi htmlSpecialTagName gui=NONE cterm=NONE
     endif
     let hs_highlight_boolean=1
     let hs_highlight_delimiters=1
-    hi pandocTitleBlock guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocTitleBlockTitle guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocTitleComment guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocComment guifg=#586e75 guibg=NONE gui=italic cterm=italic
-    hi pandocVerbatimBlock guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+    hi pandocTitleBlock guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocTitleBlockTitle guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocTitleComment guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocComment guifg=#465a61 guibg=NONE gui=italic cterm=italic
+    hi pandocVerbatimBlock guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
     hi! link pandocVerbatimBlockDeep pandocVerbatimBlock
     hi! link pandocCodeBlock pandocVerbatimBlock
     hi! link pandocCodeBlockDelim pandocVerbatimBlock
-    hi pandocBlockQuote guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader1 guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader2 guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader3 guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader4 guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader5 guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-    hi pandocBlockQuoteLeader6 guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi pandocListMarker guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocListReference guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocDefinitionBlock guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocDefinitionTerm guifg=#6c71c4 guibg=NONE gui=standout cterm=standout
-    hi pandocDefinitionIndctr guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=italic cterm=italic
-    hi pandocEmphasisNestedDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisNestedDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocStrikeoutDefinition guifg=#6c71c4 guibg=NONE gui=reverse cterm=reverse
-    hi pandocVerbatimInlineDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSuperscriptDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSubscriptDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocTableStructure guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuote guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader1 guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader2 guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader3 guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader4 guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader5 guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+    hi pandocBlockQuoteLeader6 guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi pandocListMarker guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocListReference guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocDefinitionBlock guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocDefinitionTerm guifg=#5856b9 guibg=NONE gui=standout cterm=standout
+    hi pandocDefinitionIndctr guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocEmphasisDefinition guifg=#5856b9 guibg=NONE gui=italic cterm=italic
+    hi pandocEmphasisNestedDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisNestedDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisEmphasisDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocStrikeoutDefinition guifg=#5856b9 guibg=NONE gui=reverse cterm=reverse
+    hi pandocVerbatimInlineDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSuperscriptDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSubscriptDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocTableStructure guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
     hi! link pandocTableStructureTop pandocTableStructre
     hi! link pandocTableStructureEnd pandocTableStructre
-    hi pandocTableZebraLight guifg=#268bd2 guibg=#002b36 gui=NONE cterm=NONE
-    hi pandocTableZebraDark guifg=#268bd2 guibg=#073642 gui=NONE cterm=NONE
-    hi pandocEmphasisTable guifg=#268bd2 guibg=NONE gui=italic cterm=italic
-    hi pandocEmphasisNestedTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisNestedTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisEmphasisTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocStrikeoutTable guifg=#268bd2 guibg=NONE gui=reverse cterm=reverse
-    hi pandocVerbatimInlineTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSuperscriptTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSubscriptTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocHeadingMarker guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocEmphasisNestedHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisNestedHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocStrikeoutHeading guifg=#cb4b16 guibg=NONE gui=reverse cterm=reverse
-    hi pandocVerbatimInlineHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocSuperscriptHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocSubscriptHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-    hi pandocLinkDelim guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi pandocLinkLabel guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocLinkText guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocLinkURL guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi pandocLinkTitle guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi pandocLinkTitleDelim guifg=#586e75 guibg=NONE guisp=#657b83 gui=NONE cterm=NONE
-    hi pandocLinkDefinition guifg=#2aa198 guibg=NONE guisp=#657b83 gui=NONE cterm=NONE
-    hi pandocLinkDefinitionID guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocImageCaption guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-    hi pandocFootnoteLink guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-    hi pandocFootnoteDefLink guifg=#859900 guibg=NONE gui=bold cterm=bold
-    hi pandocFootnoteInline guifg=#859900 guibg=NONE gui=bold cterm=bold
-    hi pandocFootnote guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-    hi pandocCitationDelim guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocCitation guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocCitationID guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocCitationRef guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocStyleDelim guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi pandocEmphasis guifg=#839496 guibg=NONE gui=italic cterm=italic
-    hi pandocEmphasisNested guifg=#839496 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasis guifg=#839496 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisNested guifg=#839496 guibg=NONE gui=bold cterm=bold
-    hi pandocStrongEmphasisEmphasis guifg=#839496 guibg=NONE gui=bold cterm=bold
-    hi pandocStrikeout guifg=#586e75 guibg=NONE gui=reverse cterm=reverse
-    hi pandocVerbatimInline guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSuperscript guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocSubscript guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-    hi pandocRule guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocRuleLine guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-    hi pandocEscapePair guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi pandocCitationRef guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-    hi pandocNonBreakingSpace guifg=#dc322f guibg=NONE gui=reverse cterm=reverse
+    hi pandocTableZebraLight guifg=#2075c7 guibg=#001e26 gui=NONE cterm=NONE
+    hi pandocTableZebraDark guifg=#2075c7 guibg=#002731 gui=NONE cterm=NONE
+    hi pandocEmphasisTable guifg=#2075c7 guibg=NONE gui=italic cterm=italic
+    hi pandocEmphasisNestedTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisNestedTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisEmphasisTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocStrikeoutTable guifg=#2075c7 guibg=NONE gui=reverse cterm=reverse
+    hi pandocVerbatimInlineTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSuperscriptTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSubscriptTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocHeadingMarker guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocEmphasisNestedHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisNestedHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocStrikeoutHeading guifg=#bd3612 guibg=NONE gui=reverse cterm=reverse
+    hi pandocVerbatimInlineHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocSuperscriptHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocSubscriptHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+    hi pandocLinkDelim guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi pandocLinkLabel guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocLinkText guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocLinkURL guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi pandocLinkTitle guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi pandocLinkTitleDelim guifg=#465a61 guibg=NONE guisp=#52676f gui=NONE cterm=NONE
+    hi pandocLinkDefinition guifg=#259185 guibg=NONE guisp=#52676f gui=NONE cterm=NONE
+    hi pandocLinkDefinitionID guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocImageCaption guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+    hi pandocFootnoteLink guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+    hi pandocFootnoteDefLink guifg=#728905 guibg=NONE gui=bold cterm=bold
+    hi pandocFootnoteInline guifg=#728905 guibg=NONE gui=bold cterm=bold
+    hi pandocFootnote guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+    hi pandocCitationDelim guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocCitation guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocCitationID guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocCitationRef guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocStyleDelim guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi pandocEmphasis guifg=#708183 guibg=NONE gui=italic cterm=italic
+    hi pandocEmphasisNested guifg=#708183 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasis guifg=#708183 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisNested guifg=#708183 guibg=NONE gui=bold cterm=bold
+    hi pandocStrongEmphasisEmphasis guifg=#708183 guibg=NONE gui=bold cterm=bold
+    hi pandocStrikeout guifg=#465a61 guibg=NONE gui=reverse cterm=reverse
+    hi pandocVerbatimInline guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSuperscript guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocSubscript guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+    hi pandocRule guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocRuleLine guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+    hi pandocEscapePair guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi pandocCitationRef guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+    hi pandocNonBreakingSpace guifg=#d01b24 guibg=NONE gui=reverse cterm=reverse
     hi! link pandocEscapedCharacter pandocEscapePair
     hi! link pandocLineBreak pandocEscapePair
-    hi pandocMetadataDelim guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-    hi pandocMetadata guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocMetadataKey guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-    hi pandocMetadata guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+    hi pandocMetadataDelim guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+    hi pandocMetadata guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocMetadataKey guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+    hi pandocMetadata guifg=#2075c7 guibg=NONE gui=bold cterm=bold
     hi! link pandocMetadataTitle pandocMetadata
     if !s:italics
       hi pandocComment gui=NONE cterm=NONE
@@ -382,31 +382,31 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi pandocEmphasis gui=NONE cterm=NONE
     endif
     if get(g:, 'solarized_statusline', '') ==# 'flat'
-      hi ALEErrorSign guifg=#dc322f guibg=NONE gui=bold cterm=bold
-      hi ALEInfoSign guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-      hi ALEWarningSign guifg=#b58900 guibg=NONE gui=bold cterm=bold
-      hi ALEErrorSignLineNr guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-      hi ALEInfoSignLineNr guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-      hi ALEWarningSignLineNr guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+      hi ALEErrorSign guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+      hi ALEInfoSign guifg=#259185 guibg=NONE gui=bold cterm=bold
+      hi ALEWarningSign guifg=#a57705 guibg=NONE gui=bold cterm=bold
+      hi ALEErrorSignLineNr guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+      hi ALEInfoSignLineNr guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+      hi ALEWarningSignLineNr guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
     else
       if get(g:, 'ale_sign_highlight_linenrs', '') ==# 1
-        hi ALEErrorSign guifg=#073642 guibg=#dc322f gui=bold cterm=bold
-        hi ALEInfoSign guifg=#073642 guibg=#2aa198 gui=bold cterm=bold
-        hi ALEWarningSign guifg=#073642 guibg=#b58900 gui=bold cterm=bold
+        hi ALEErrorSign guifg=#002731 guibg=#d01b24 gui=bold cterm=bold
+        hi ALEInfoSign guifg=#002731 guibg=#259185 gui=bold cterm=bold
+        hi ALEWarningSign guifg=#002731 guibg=#a57705 gui=bold cterm=bold
       else
-        hi ALEErrorSign guifg=#dc322f guibg=#073642 gui=bold cterm=bold
-        hi ALEInfoSign guifg=#2aa198 guibg=#073642 gui=bold cterm=bold
-        hi ALEWarningSign guifg=#b58900 guibg=#073642 gui=bold cterm=bold
+        hi ALEErrorSign guifg=#d01b24 guibg=#002731 gui=bold cterm=bold
+        hi ALEInfoSign guifg=#259185 guibg=#002731 gui=bold cterm=bold
+        hi ALEWarningSign guifg=#a57705 guibg=#002731 gui=bold cterm=bold
       endif
-      hi ALEErrorSignLineNr guifg=#073642 guibg=#dc322f gui=NONE cterm=NONE
-      hi ALEInfoSignLineNr guifg=#073642 guibg=#2aa198 gui=NONE cterm=NONE
-      hi ALEWarningSignLineNr guifg=#073642 guibg=#b58900 gui=NONE cterm=NONE
+      hi ALEErrorSignLineNr guifg=#002731 guibg=#d01b24 gui=NONE cterm=NONE
+      hi ALEInfoSignLineNr guifg=#002731 guibg=#259185 gui=NONE cterm=NONE
+      hi ALEWarningSignLineNr guifg=#002731 guibg=#a57705 gui=NONE cterm=NONE
     endif
-    hi ALEError guifg=#dc322f guibg=NONE guisp=#dc322f gui=undercurl cterm=undercurl
+    hi ALEError guifg=#d01b24 guibg=NONE guisp=#d01b24 gui=undercurl cterm=undercurl
     hi ALEErrorLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ALEInfo guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=undercurl
+    hi ALEInfo guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=undercurl
     hi ALEInfoLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ALEWarning guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=undercurl
+    hi ALEWarning guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=undercurl
     hi ALEWarningLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
     hi! link ALEStyleError ALEError
     hi! link ALEStyleErrorSign ALEErrorSign
@@ -419,159 +419,159 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     finish
   endif
   " Light background
-  let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5', '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
+  let g:terminal_ansi_colors = ['#002731', '#d01b24', '#728905', '#a57705', '#2075c7', '#c61b6e', '#259185', '#e9e2cb', '#001e26', '#bd3612', '#465a61', '#52676f', '#708183', '#5856b9', '#81908f', '#fdf6e3']
   if has('nvim')
-    let g:terminal_color_0 = '#073642'
-    let g:terminal_color_1 = '#dc322f'
-    let g:terminal_color_2 = '#859900'
-    let g:terminal_color_3 = '#b58900'
-    let g:terminal_color_4 = '#268bd2'
-    let g:terminal_color_5 = '#d33682'
-    let g:terminal_color_6 = '#2aa198'
-    let g:terminal_color_7 = '#eee8d5'
-    let g:terminal_color_8 = '#002b36'
-    let g:terminal_color_9 = '#cb4b16'
-    let g:terminal_color_10 = '#586e75'
-    let g:terminal_color_11 = '#657b83'
-    let g:terminal_color_12 = '#839496'
-    let g:terminal_color_13 = '#6c71c4'
-    let g:terminal_color_14 = '#93a1a1'
+    let g:terminal_color_0 = '#002731'
+    let g:terminal_color_1 = '#d01b24'
+    let g:terminal_color_2 = '#728905'
+    let g:terminal_color_3 = '#a57705'
+    let g:terminal_color_4 = '#2075c7'
+    let g:terminal_color_5 = '#c61b6e'
+    let g:terminal_color_6 = '#259185'
+    let g:terminal_color_7 = '#e9e2cb'
+    let g:terminal_color_8 = '#001e26'
+    let g:terminal_color_9 = '#bd3612'
+    let g:terminal_color_10 = '#465a61'
+    let g:terminal_color_11 = '#52676f'
+    let g:terminal_color_12 = '#708183'
+    let g:terminal_color_13 = '#5856b9'
+    let g:terminal_color_14 = '#81908f'
     let g:terminal_color_15 = '#fdf6e3'
   endif
   if s:termtrans
-    hi Normal guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-    hi CursorLine guifg=NONE guibg=NONE guisp=#93a1a1 gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+    hi Normal guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+    hi CursorLine guifg=NONE guibg=NONE guisp=#81908f gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
     hi Terminal guifg=fg guibg=NONE gui=NONE cterm=NONE
-    hi ToolbarButton guifg=#586e75 guibg=NONE gui=bold cterm=bold
+    hi ToolbarButton guifg=#465a61 guibg=NONE gui=bold cterm=bold
     hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   else " opaque
-    hi Normal guifg=#657b83 guibg=#fdf6e3 gui=NONE cterm=NONE
-    hi CursorLine guifg=NONE guibg=#eee8d5 gui=NONE cterm=NONE
+    hi Normal guifg=#52676f guibg=#fdf6e3 gui=NONE cterm=NONE
+    hi CursorLine guifg=NONE guibg=#e9e2cb gui=NONE cterm=NONE
     hi Terminal guifg=fg guibg=#fdf6e3 gui=NONE cterm=NONE
-    hi ToolbarButton guifg=#586e75 guibg=#eee8d5 gui=bold cterm=bold
-    hi ToolbarLine guifg=NONE guibg=#eee8d5 gui=NONE cterm=NONE
+    hi ToolbarButton guifg=#465a61 guibg=#e9e2cb gui=bold cterm=bold
+    hi ToolbarLine guifg=NONE guibg=#e9e2cb gui=NONE cterm=NONE
   endif
   if get(g:, 'solarized_visibility', '') ==# 'high'
     if get(g:, 'solarized_old_cursor_style', 0)
-      hi Cursor guifg=#fdf6e3 guibg=#657b83 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#52676f gui=NONE cterm=NONE
     else
-      hi Cursor guifg=#fdf6e3 guibg=#dc322f gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#d01b24 gui=NONE cterm=NONE
     endif
-    hi CursorLineNr guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi MatchParen guifg=#cb4b16 guibg=#eee8d5 gui=bold,underline cterm=bold,underline
-    hi NonText guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi SpecialKey guifg=#dc322f guibg=NONE gui=reverse cterm=reverse
-    hi SpellBad guifg=#6c71c4 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-    hi SpellCap guifg=#6c71c4 guibg=#eee8d5 guisp=#dc322f gui=reverse,undercurl cterm=reverse,underline
-    hi SpellLocal guifg=#b58900 guibg=#eee8d5 guisp=#cb4b16 gui=reverse,undercurl cterm=reverse,underline
-    hi SpellRare guifg=#2aa198 guibg=#eee8d5 guisp=#cb4b16 gui=reverse,undercurl cterm=reverse,underline
-    hi Title guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
+    hi CursorLineNr guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi MatchParen guifg=#bd3612 guibg=#e9e2cb gui=bold,underline cterm=bold,underline
+    hi NonText guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi SpecialKey guifg=#d01b24 guibg=NONE gui=reverse cterm=reverse
+    hi SpellBad guifg=#5856b9 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+    hi SpellCap guifg=#5856b9 guibg=#e9e2cb guisp=#d01b24 gui=reverse,undercurl cterm=reverse,underline
+    hi SpellLocal guifg=#a57705 guibg=#e9e2cb guisp=#bd3612 gui=reverse,undercurl cterm=reverse,underline
+    hi SpellRare guifg=#259185 guibg=#e9e2cb guisp=#bd3612 gui=reverse,undercurl cterm=reverse,underline
+    hi Title guifg=#bd3612 guibg=NONE gui=bold cterm=bold
   elseif get(g:, 'solarized_visibility', '') ==# 'low'
     if get(g:, 'solarized_old_cursor_style', 0)
-      hi Cursor guifg=#fdf6e3 guibg=#657b83 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#52676f gui=NONE cterm=NONE
     else
-      hi Cursor guifg=#fdf6e3 guibg=#cb4b16 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#bd3612 gui=NONE cterm=NONE
     endif
-    hi CursorLineNr guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
-    hi MatchParen guifg=#cb4b16 guibg=#eee8d5 gui=bold cterm=bold
-    hi NonText guifg=#eee8d5 guibg=NONE gui=bold cterm=bold
-    hi SpecialKey guifg=#eee8d5 guibg=NONE gui=bold cterm=bold
-    hi SpellBad guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-    hi SpellCap guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-    hi SpellLocal guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=underline
-    hi SpellRare guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=underline
-    hi Title guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
+    hi CursorLineNr guifg=#81908f guibg=NONE gui=bold cterm=bold
+    hi MatchParen guifg=#bd3612 guibg=#e9e2cb gui=bold cterm=bold
+    hi NonText guifg=#e9e2cb guibg=NONE gui=bold cterm=bold
+    hi SpecialKey guifg=#e9e2cb guibg=NONE gui=bold cterm=bold
+    hi SpellBad guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+    hi SpellCap guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+    hi SpellLocal guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=underline
+    hi SpellRare guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=underline
+    hi Title guifg=#81908f guibg=NONE gui=bold cterm=bold
   else " normal visibility
     if get(g:, 'solarized_old_cursor_style', 0)
-      hi Cursor guifg=#fdf6e3 guibg=#657b83 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#52676f gui=NONE cterm=NONE
     else
-      hi Cursor guifg=#fdf6e3 guibg=#cb4b16 gui=NONE cterm=NONE
+      hi Cursor guifg=#fdf6e3 guibg=#bd3612 gui=NONE cterm=NONE
     endif
-    hi CursorLineNr guifg=#657b83 guibg=NONE gui=bold cterm=bold
-    hi MatchParen guifg=#002b36 guibg=#eee8d5 gui=bold cterm=bold
-    hi NonText guifg=#839496 guibg=NONE gui=bold cterm=bold
-    hi SpecialKey guifg=#839496 guibg=#eee8d5 gui=bold cterm=bold
-    hi SpellBad guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-    hi SpellCap guifg=#6c71c4 guibg=NONE guisp=#6c71c4 gui=undercurl cterm=underline
-    hi SpellLocal guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=underline
-    hi SpellRare guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=underline
-    hi Title guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
+    hi CursorLineNr guifg=#52676f guibg=NONE gui=bold cterm=bold
+    hi MatchParen guifg=#001e26 guibg=#e9e2cb gui=bold cterm=bold
+    hi NonText guifg=#708183 guibg=NONE gui=bold cterm=bold
+    hi SpecialKey guifg=#708183 guibg=#e9e2cb gui=bold cterm=bold
+    hi SpellBad guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+    hi SpellCap guifg=#5856b9 guibg=NONE guisp=#5856b9 gui=undercurl cterm=underline
+    hi SpellLocal guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=underline
+    hi SpellRare guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=underline
+    hi Title guifg=#bd3612 guibg=NONE gui=bold cterm=bold
   endif
   if get(g:, 'solarized_diffmode', '') ==# 'high'
-    hi DiffAdd guifg=#859900 guibg=NONE gui=reverse cterm=reverse
-    hi DiffChange guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
-    hi DiffDelete guifg=#dc322f guibg=NONE gui=reverse cterm=reverse
-    hi DiffText guifg=#268bd2 guibg=NONE gui=reverse cterm=reverse
+    hi DiffAdd guifg=#728905 guibg=NONE gui=reverse cterm=reverse
+    hi DiffChange guifg=#a57705 guibg=NONE gui=reverse cterm=reverse
+    hi DiffDelete guifg=#d01b24 guibg=NONE gui=reverse cterm=reverse
+    hi DiffText guifg=#2075c7 guibg=NONE gui=reverse cterm=reverse
   elseif get(g:, 'solarized_diffmode', '') ==# 'low'
-    hi DiffAdd guifg=#859900 guibg=NONE guisp=#859900 gui=NONE cterm=NONE
-    hi DiffChange guifg=#b58900 guibg=NONE guisp=#b58900 gui=NONE cterm=NONE
-    hi DiffDelete guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi DiffText guifg=#268bd2 guibg=NONE guisp=#268bd2 gui=NONE cterm=NONE
+    hi DiffAdd guifg=#728905 guibg=NONE guisp=#728905 gui=NONE cterm=NONE
+    hi DiffChange guifg=#a57705 guibg=NONE guisp=#a57705 gui=NONE cterm=NONE
+    hi DiffDelete guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi DiffText guifg=#2075c7 guibg=NONE guisp=#2075c7 gui=NONE cterm=NONE
   else " normal diffmode
-    hi DiffAdd guifg=#859900 guibg=#eee8d5 guisp=#859900 gui=NONE cterm=NONE
-    hi DiffChange guifg=#b58900 guibg=#eee8d5 guisp=#b58900 gui=NONE cterm=NONE
-    hi DiffDelete guifg=#dc322f guibg=#eee8d5 gui=bold cterm=bold
-    hi DiffText guifg=#268bd2 guibg=#eee8d5 guisp=#268bd2 gui=NONE cterm=NONE
+    hi DiffAdd guifg=#728905 guibg=#e9e2cb guisp=#728905 gui=NONE cterm=NONE
+    hi DiffChange guifg=#a57705 guibg=#e9e2cb guisp=#a57705 gui=NONE cterm=NONE
+    hi DiffDelete guifg=#d01b24 guibg=#e9e2cb gui=bold cterm=bold
+    hi DiffText guifg=#2075c7 guibg=#e9e2cb guisp=#2075c7 gui=NONE cterm=NONE
   endif
   if get(g:, 'solarized_statusline', '') ==# 'low'
-    hi StatusLine guifg=#eee8d5 guibg=#586e75 gui=bold,reverse cterm=bold,reverse
-    hi StatusLineNC guifg=#eee8d5 guibg=#93a1a1 gui=reverse cterm=reverse
-    hi TabLineSel guifg=#586e75 guibg=#eee8d5 gui=NONE cterm=NONE
-    hi NormalMode guifg=#eee8d5 guibg=#586e75 gui=bold,reverse cterm=bold,reverse
+    hi StatusLine guifg=#e9e2cb guibg=#465a61 gui=bold,reverse cterm=bold,reverse
+    hi StatusLineNC guifg=#e9e2cb guibg=#81908f gui=reverse cterm=reverse
+    hi TabLineSel guifg=#465a61 guibg=#e9e2cb gui=NONE cterm=NONE
+    hi NormalMode guifg=#e9e2cb guibg=#465a61 gui=bold,reverse cterm=bold,reverse
   else
-    hi StatusLine guifg=#eee8d5 guibg=#073642 gui=reverse cterm=reverse
-    hi StatusLineNC guifg=#eee8d5 guibg=#586e75 gui=reverse cterm=reverse
-    hi TabLineSel guifg=#073642 guibg=#eee8d5 gui=NONE cterm=NONE
-    hi NormalMode guifg=#eee8d5 guibg=#073642 gui=reverse cterm=reverse
+    hi StatusLine guifg=#e9e2cb guibg=#002731 gui=reverse cterm=reverse
+    hi StatusLineNC guifg=#e9e2cb guibg=#465a61 gui=reverse cterm=reverse
+    hi TabLineSel guifg=#002731 guibg=#e9e2cb gui=NONE cterm=NONE
+    hi NormalMode guifg=#e9e2cb guibg=#002731 gui=reverse cterm=reverse
   endif
-  hi ColorColumn guifg=NONE guibg=#eee8d5 gui=NONE cterm=NONE
-  hi Conceal guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi CursorColumn guifg=NONE guibg=#eee8d5 gui=NONE cterm=NONE
-  hi Directory guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+  hi ColorColumn guifg=NONE guibg=#e9e2cb gui=NONE cterm=NONE
+  hi Conceal guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi CursorColumn guifg=NONE guibg=#e9e2cb gui=NONE cterm=NONE
+  hi Directory guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
   hi EndOfBuffer guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi ErrorMsg guifg=#dc322f guibg=#fdf6e3 gui=reverse cterm=reverse
-  hi FoldColumn guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-  hi Folded guifg=#657b83 guibg=NONE guisp=#fdf6e3 gui=bold cterm=bold
-  hi IncSearch guifg=#cb4b16 guibg=NONE gui=standout cterm=standout
-  hi LineNr guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi ModeMsg guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi MoreMsg guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi Pmenu guifg=#657b83 guibg=#eee8d5 gui=NONE cterm=NONE
-  hi PmenuSbar guifg=NONE guibg=#eee8d5 gui=NONE cterm=NONE
-  hi PmenuSel guifg=#fdf6e3 guibg=#93a1a1 gui=NONE cterm=NONE
-  hi PmenuThumb guifg=NONE guibg=#93a1a1 gui=NONE cterm=NONE
-  hi Question guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-  hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
-  hi SignColumn guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-  hi TabLine guifg=#93a1a1 guibg=#eee8d5 gui=NONE cterm=NONE
-  hi TabLineFill guifg=#93a1a1 guibg=#eee8d5 gui=NONE cterm=NONE
-  hi VertSplit guifg=#93a1a1 guibg=#eee8d5 gui=NONE cterm=NONE
-  hi Visual guifg=#93a1a1 guibg=#fdf6e3 gui=reverse cterm=reverse
-  hi VisualNOS guifg=NONE guibg=#eee8d5 gui=reverse cterm=reverse
-  hi WarningMsg guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi WildMenu guifg=#93a1a1 guibg=#fdf6e3 gui=reverse cterm=reverse
-  hi Comment guifg=#93a1a1 guibg=NONE gui=italic cterm=italic
-  hi Constant guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
+  hi ErrorMsg guifg=#d01b24 guibg=#fdf6e3 gui=reverse cterm=reverse
+  hi FoldColumn guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+  hi Folded guifg=#52676f guibg=NONE guisp=#fdf6e3 gui=bold cterm=bold
+  hi IncSearch guifg=#bd3612 guibg=NONE gui=standout cterm=standout
+  hi LineNr guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi ModeMsg guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi MoreMsg guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi Pmenu guifg=#52676f guibg=#e9e2cb gui=NONE cterm=NONE
+  hi PmenuSbar guifg=NONE guibg=#e9e2cb gui=NONE cterm=NONE
+  hi PmenuSel guifg=#fdf6e3 guibg=#81908f gui=NONE cterm=NONE
+  hi PmenuThumb guifg=NONE guibg=#81908f gui=NONE cterm=NONE
+  hi Question guifg=#259185 guibg=NONE gui=bold cterm=bold
+  hi Search guifg=#a57705 guibg=NONE gui=reverse cterm=reverse
+  hi SignColumn guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+  hi TabLine guifg=#81908f guibg=#e9e2cb gui=NONE cterm=NONE
+  hi TabLineFill guifg=#81908f guibg=#e9e2cb gui=NONE cterm=NONE
+  hi VertSplit guifg=#81908f guibg=#e9e2cb gui=NONE cterm=NONE
+  hi Visual guifg=#81908f guibg=#fdf6e3 gui=reverse cterm=reverse
+  hi VisualNOS guifg=NONE guibg=#e9e2cb gui=reverse cterm=reverse
+  hi WarningMsg guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi WildMenu guifg=#81908f guibg=#fdf6e3 gui=reverse cterm=reverse
+  hi Comment guifg=#81908f guibg=NONE gui=italic cterm=italic
+  hi Constant guifg=#259185 guibg=NONE gui=NONE cterm=NONE
   hi CursorIM guifg=NONE guibg=fg gui=NONE cterm=NONE
-  hi Error guifg=#dc322f guibg=#fdf6e3 gui=bold,reverse cterm=bold,reverse
-  hi Identifier guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#d01b24 guibg=#fdf6e3 gui=bold,reverse cterm=bold,reverse
+  hi Identifier guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-  hi Special guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-  hi Statement guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-  hi Todo guifg=#d33682 guibg=NONE gui=bold cterm=bold
-  hi Type guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi InsertMode guifg=#eee8d5 guibg=#2aa198 gui=bold,reverse cterm=bold,reverse
-  hi ReplaceMode guifg=#eee8d5 guibg=#cb4b16 gui=bold,reverse cterm=bold,reverse
-  hi VisualMode guifg=#eee8d5 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
-  hi CommandMode guifg=#eee8d5 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
+  hi PreProc guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+  hi Special guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+  hi Statement guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+  hi Todo guifg=#c61b6e guibg=NONE gui=bold cterm=bold
+  hi Type guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi Underlined guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi InsertMode guifg=#e9e2cb guibg=#259185 gui=bold,reverse cterm=bold,reverse
+  hi ReplaceMode guifg=#e9e2cb guibg=#bd3612 gui=bold,reverse cterm=bold,reverse
+  hi VisualMode guifg=#e9e2cb guibg=#c61b6e gui=bold,reverse cterm=bold,reverse
+  hi CommandMode guifg=#e9e2cb guibg=#c61b6e gui=bold,reverse cterm=bold,reverse
   if !s:italics
     hi Comment gui=NONE cterm=NONE
   endif
   if has('nvim')
     hi! link TermCursor Cursor
-    hi TermCursorNC guifg=#fdf6e3 guibg=#93a1a1 gui=NONE cterm=NONE
+    hi TermCursorNC guifg=#fdf6e3 guibg=#81908f gui=NONE cterm=NONE
   endif
   if !get(g:, 'solarized_extra_hi_groups', 0)
     unlet s:t_Co s:italics s:termtrans
@@ -583,180 +583,180 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi! link helpSpecial Special
   hi! link vimSet Normal
   hi! link vimSetEqual Normal
-  hi vimCommentString guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi vimCommand guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi vimCmdSep guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi helpExample guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-  hi helpOption guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi helpNote guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi helpVim guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi helpHyperTextJump guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi helpHyperTextEntry guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-  hi vimIsCommand guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-  hi vimSynMtchOpt guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi vimSynType guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi vimHiLink guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi vimHiGroup guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi vimGroup guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+  hi vimCommentString guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi vimCommand guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi vimCmdSep guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi helpExample guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+  hi helpOption guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi helpNote guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi helpVim guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi helpHyperTextJump guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi helpHyperTextEntry guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+  hi vimIsCommand guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+  hi vimSynMtchOpt guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi vimSynType guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi vimHiLink guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi vimHiGroup guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi vimGroup guifg=#2075c7 guibg=NONE gui=bold cterm=bold
   hi! link diffAdded Statement
   hi! link diffLine Identifier
-  hi gitcommitComment guifg=#93a1a1 guibg=NONE gui=italic cterm=italic
+  hi gitcommitComment guifg=#81908f guibg=NONE gui=italic cterm=italic
   hi! link gitcommitUntracked gitcommitComment
   hi! link gitcommitDiscarded gitcommitComment
   hi! link gitcommitSelected gitcommitComment
-  hi gitcommitUnmerged guifg=#859900 guibg=NONE gui=bold cterm=bold
-  hi gitcommitOnBranch guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
-  hi gitcommitBranch guifg=#d33682 guibg=NONE gui=bold cterm=bold
+  hi gitcommitUnmerged guifg=#728905 guibg=NONE gui=bold cterm=bold
+  hi gitcommitOnBranch guifg=#81908f guibg=NONE gui=bold cterm=bold
+  hi gitcommitBranch guifg=#c61b6e guibg=NONE gui=bold cterm=bold
   hi! link gitcommitNoBranch gitcommitBranch
-  hi gitcommitdiscardedtype guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-  hi gitcommitselectedtype guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-  hi gitcommitHeader guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi gitcommitUntrackedFile guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-  hi gitcommitDiscardedFile guifg=#dc322f guibg=NONE gui=bold cterm=bold
-  hi gitcommitSelectedFile guifg=#859900 guibg=NONE gui=bold cterm=bold
-  hi gitcommitUnmergedFile guifg=#b58900 guibg=NONE gui=bold cterm=bold
-  hi gitcommitFile guifg=#657b83 guibg=NONE gui=bold cterm=bold
+  hi gitcommitdiscardedtype guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+  hi gitcommitselectedtype guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+  hi gitcommitHeader guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi gitcommitUntrackedFile guifg=#259185 guibg=NONE gui=bold cterm=bold
+  hi gitcommitDiscardedFile guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+  hi gitcommitSelectedFile guifg=#728905 guibg=NONE gui=bold cterm=bold
+  hi gitcommitUnmergedFile guifg=#a57705 guibg=NONE gui=bold cterm=bold
+  hi gitcommitFile guifg=#52676f guibg=NONE gui=bold cterm=bold
   hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
   hi! link gitcommitSelectedArrow gitcommitSelectedFile
   hi! link gitcommitUnmergedArrow gitcommitUnmergedFile
-  hi htmlTag guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi htmlEndTag guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi htmlTagN guifg=#586e75 guibg=NONE gui=bold cterm=bold
-  hi htmlTagName guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi htmlSpecialTagName guifg=#268bd2 guibg=NONE gui=italic cterm=italic
-  hi htmlArg guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-  hi javaScript guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+  hi htmlTag guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi htmlEndTag guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi htmlTagN guifg=#465a61 guibg=NONE gui=bold cterm=bold
+  hi htmlTagName guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi htmlSpecialTagName guifg=#2075c7 guibg=NONE gui=italic cterm=italic
+  hi htmlArg guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+  hi javaScript guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
   hi! link jsFuncCall Function
-  hi perlHereDoc guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
-  hi perlVarPlain guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi perlStatementFileDesc guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi texstatement guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi texmathzonex guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi texmathmatcher guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi texreflabel guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi rubyDefine guifg=#586e75 guibg=NONE gui=bold cterm=bold
+  hi perlHereDoc guifg=#465a61 guibg=NONE gui=NONE cterm=NONE
+  hi perlVarPlain guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi perlStatementFileDesc guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi texstatement guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi texmathzonex guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi texmathmatcher guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi texreflabel guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi rubyDefine guifg=#465a61 guibg=NONE gui=bold cterm=bold
   hi! link rubySymbol Type
-  hi rubyBoolean guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi cPreCondit guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-  hi VarId guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi ConId guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi hsImport guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi hsString guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-  hi hsStructure guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hs_hlFunctionName guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi hsStatement guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hsImportLabel guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hs_OpFunctionName guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi hs_DeclareFunction guifg=#cb4b16 guibg=NONE gui=NONE cterm=NONE
-  hi hsVarSym guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hsType guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi hsTypedef guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hsModuleName guifg=#859900 guibg=NONE gui=NONE cterm=NONE
+  hi rubyBoolean guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi cPreCondit guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+  hi VarId guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi ConId guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi hsImport guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi hsString guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+  hi hsStructure guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hs_hlFunctionName guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi hsStatement guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hsImportLabel guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hs_OpFunctionName guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi hs_DeclareFunction guifg=#bd3612 guibg=NONE gui=NONE cterm=NONE
+  hi hsVarSym guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hsType guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi hsTypedef guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hsModuleName guifg=#728905 guibg=NONE gui=NONE cterm=NONE
   hi! link hsImportParams Delimiter
   hi! link hsDelimTypeExport Delimiter
   hi! link hsModuleStartLabel hsStructure
   hi! link hsModuleWhereLabel hsModuleStartLabel
-  hi hsNiceOperator guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi hsniceoperator guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
+  hi hsNiceOperator guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi hsniceoperator guifg=#259185 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi gitcommitComment gui=NONE cterm=NONE
     hi htmlSpecialTagName gui=NONE cterm=NONE
   endif
   let hs_highlight_boolean=1
   let hs_highlight_delimiters=1
-  hi pandocTitleBlock guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocTitleBlockTitle guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocTitleComment guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocComment guifg=#93a1a1 guibg=NONE gui=italic cterm=italic
-  hi pandocVerbatimBlock guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+  hi pandocTitleBlock guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocTitleBlockTitle guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocTitleComment guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocComment guifg=#81908f guibg=NONE gui=italic cterm=italic
+  hi pandocVerbatimBlock guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
   hi! link pandocVerbatimBlockDeep pandocVerbatimBlock
   hi! link pandocCodeBlock pandocVerbatimBlock
   hi! link pandocCodeBlockDelim pandocVerbatimBlock
-  hi pandocBlockQuote guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader1 guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader2 guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader3 guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader4 guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader5 guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
-  hi pandocBlockQuoteLeader6 guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi pandocListMarker guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocListReference guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocDefinitionBlock guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocDefinitionTerm guifg=#6c71c4 guibg=NONE gui=standout cterm=standout
-  hi pandocDefinitionIndctr guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=italic cterm=italic
-  hi pandocEmphasisNestedDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisNestedDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisEmphasisDefinition guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocStrikeoutDefinition guifg=#6c71c4 guibg=NONE gui=reverse cterm=reverse
-  hi pandocVerbatimInlineDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSuperscriptDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSubscriptDefinition guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocTableStructure guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuote guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader1 guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader2 guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader3 guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader4 guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader5 guifg=#52676f guibg=NONE gui=NONE cterm=NONE
+  hi pandocBlockQuoteLeader6 guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi pandocListMarker guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocListReference guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocDefinitionBlock guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocDefinitionTerm guifg=#5856b9 guibg=NONE gui=standout cterm=standout
+  hi pandocDefinitionIndctr guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocEmphasisDefinition guifg=#5856b9 guibg=NONE gui=italic cterm=italic
+  hi pandocEmphasisNestedDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisNestedDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisEmphasisDefinition guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocStrikeoutDefinition guifg=#5856b9 guibg=NONE gui=reverse cterm=reverse
+  hi pandocVerbatimInlineDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSuperscriptDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSubscriptDefinition guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocTableStructure guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
   hi! link pandocTableStructureTop pandocTableStructre
   hi! link pandocTableStructureEnd pandocTableStructre
-  hi pandocTableZebraLight guifg=#268bd2 guibg=#fdf6e3 gui=NONE cterm=NONE
-  hi pandocTableZebraDark guifg=#268bd2 guibg=#eee8d5 gui=NONE cterm=NONE
-  hi pandocEmphasisTable guifg=#268bd2 guibg=NONE gui=italic cterm=italic
-  hi pandocEmphasisNestedTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisNestedTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisEmphasisTable guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocStrikeoutTable guifg=#268bd2 guibg=NONE gui=reverse cterm=reverse
-  hi pandocVerbatimInlineTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSuperscriptTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSubscriptTable guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocHeadingMarker guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocEmphasisNestedHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisNestedHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisEmphasisHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocStrikeoutHeading guifg=#cb4b16 guibg=NONE gui=reverse cterm=reverse
-  hi pandocVerbatimInlineHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocSuperscriptHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocSubscriptHeading guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
-  hi pandocLinkDelim guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi pandocLinkLabel guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocLinkText guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocLinkURL guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-  hi pandocLinkTitle guifg=#839496 guibg=NONE gui=NONE cterm=NONE
-  hi pandocLinkTitleDelim guifg=#93a1a1 guibg=NONE guisp=#839496 gui=NONE cterm=NONE
-  hi pandocLinkDefinition guifg=#2aa198 guibg=NONE guisp=#839496 gui=NONE cterm=NONE
-  hi pandocLinkDefinitionID guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocImageCaption guifg=#6c71c4 guibg=NONE gui=bold cterm=bold
-  hi pandocFootnoteLink guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-  hi pandocFootnoteDefLink guifg=#859900 guibg=NONE gui=bold cterm=bold
-  hi pandocFootnoteInline guifg=#859900 guibg=NONE gui=bold cterm=bold
-  hi pandocFootnote guifg=#859900 guibg=NONE gui=NONE cterm=NONE
-  hi pandocCitationDelim guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocCitation guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocCitationID guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocCitationRef guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocStyleDelim guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi pandocEmphasis guifg=#657b83 guibg=NONE gui=italic cterm=italic
-  hi pandocEmphasisNested guifg=#657b83 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasis guifg=#657b83 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisNested guifg=#657b83 guibg=NONE gui=bold cterm=bold
-  hi pandocStrongEmphasisEmphasis guifg=#657b83 guibg=NONE gui=bold cterm=bold
-  hi pandocStrikeout guifg=#93a1a1 guibg=NONE gui=reverse cterm=reverse
-  hi pandocVerbatimInline guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSuperscript guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocSubscript guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
-  hi pandocRule guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocRuleLine guifg=#268bd2 guibg=NONE gui=bold cterm=bold
-  hi pandocEscapePair guifg=#dc322f guibg=NONE gui=bold cterm=bold
-  hi pandocCitationRef guifg=#d33682 guibg=NONE gui=NONE cterm=NONE
-  hi pandocNonBreakingSpace guifg=#dc322f guibg=NONE gui=reverse cterm=reverse
+  hi pandocTableZebraLight guifg=#2075c7 guibg=#fdf6e3 gui=NONE cterm=NONE
+  hi pandocTableZebraDark guifg=#2075c7 guibg=#e9e2cb gui=NONE cterm=NONE
+  hi pandocEmphasisTable guifg=#2075c7 guibg=NONE gui=italic cterm=italic
+  hi pandocEmphasisNestedTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisNestedTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisEmphasisTable guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocStrikeoutTable guifg=#2075c7 guibg=NONE gui=reverse cterm=reverse
+  hi pandocVerbatimInlineTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSuperscriptTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSubscriptTable guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocHeadingMarker guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocEmphasisNestedHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisNestedHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisEmphasisHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocStrikeoutHeading guifg=#bd3612 guibg=NONE gui=reverse cterm=reverse
+  hi pandocVerbatimInlineHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocSuperscriptHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocSubscriptHeading guifg=#bd3612 guibg=NONE gui=bold cterm=bold
+  hi pandocLinkDelim guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi pandocLinkLabel guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocLinkText guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocLinkURL guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+  hi pandocLinkTitle guifg=#708183 guibg=NONE gui=NONE cterm=NONE
+  hi pandocLinkTitleDelim guifg=#81908f guibg=NONE guisp=#708183 gui=NONE cterm=NONE
+  hi pandocLinkDefinition guifg=#259185 guibg=NONE guisp=#708183 gui=NONE cterm=NONE
+  hi pandocLinkDefinitionID guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocImageCaption guifg=#5856b9 guibg=NONE gui=bold cterm=bold
+  hi pandocFootnoteLink guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+  hi pandocFootnoteDefLink guifg=#728905 guibg=NONE gui=bold cterm=bold
+  hi pandocFootnoteInline guifg=#728905 guibg=NONE gui=bold cterm=bold
+  hi pandocFootnote guifg=#728905 guibg=NONE gui=NONE cterm=NONE
+  hi pandocCitationDelim guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocCitation guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocCitationID guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocCitationRef guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocStyleDelim guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi pandocEmphasis guifg=#52676f guibg=NONE gui=italic cterm=italic
+  hi pandocEmphasisNested guifg=#52676f guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasis guifg=#52676f guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisNested guifg=#52676f guibg=NONE gui=bold cterm=bold
+  hi pandocStrongEmphasisEmphasis guifg=#52676f guibg=NONE gui=bold cterm=bold
+  hi pandocStrikeout guifg=#81908f guibg=NONE gui=reverse cterm=reverse
+  hi pandocVerbatimInline guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSuperscript guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocSubscript guifg=#5856b9 guibg=NONE gui=NONE cterm=NONE
+  hi pandocRule guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocRuleLine guifg=#2075c7 guibg=NONE gui=bold cterm=bold
+  hi pandocEscapePair guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+  hi pandocCitationRef guifg=#c61b6e guibg=NONE gui=NONE cterm=NONE
+  hi pandocNonBreakingSpace guifg=#d01b24 guibg=NONE gui=reverse cterm=reverse
   hi! link pandocEscapedCharacter pandocEscapePair
   hi! link pandocLineBreak pandocEscapePair
-  hi pandocMetadataDelim guifg=#93a1a1 guibg=NONE gui=NONE cterm=NONE
-  hi pandocMetadata guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocMetadataKey guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
-  hi pandocMetadata guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+  hi pandocMetadataDelim guifg=#81908f guibg=NONE gui=NONE cterm=NONE
+  hi pandocMetadata guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocMetadataKey guifg=#2075c7 guibg=NONE gui=NONE cterm=NONE
+  hi pandocMetadata guifg=#2075c7 guibg=NONE gui=bold cterm=bold
   hi! link pandocMetadataTitle pandocMetadata
   if !s:italics
     hi pandocComment gui=NONE cterm=NONE
@@ -765,31 +765,31 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi pandocEmphasis gui=NONE cterm=NONE
   endif
   if get(g:, 'solarized_statusline', '') ==# 'flat'
-    hi ALEErrorSign guifg=#dc322f guibg=NONE gui=bold cterm=bold
-    hi ALEInfoSign guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-    hi ALEWarningSign guifg=#b58900 guibg=NONE gui=bold cterm=bold
-    hi ALEErrorSignLineNr guifg=#dc322f guibg=NONE gui=NONE cterm=NONE
-    hi ALEInfoSignLineNr guifg=#2aa198 guibg=NONE gui=NONE cterm=NONE
-    hi ALEWarningSignLineNr guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
+    hi ALEErrorSign guifg=#d01b24 guibg=NONE gui=bold cterm=bold
+    hi ALEInfoSign guifg=#259185 guibg=NONE gui=bold cterm=bold
+    hi ALEWarningSign guifg=#a57705 guibg=NONE gui=bold cterm=bold
+    hi ALEErrorSignLineNr guifg=#d01b24 guibg=NONE gui=NONE cterm=NONE
+    hi ALEInfoSignLineNr guifg=#259185 guibg=NONE gui=NONE cterm=NONE
+    hi ALEWarningSignLineNr guifg=#a57705 guibg=NONE gui=NONE cterm=NONE
   else
     if get(g:, 'ale_sign_highlight_linenrs', '') ==# 1
-      hi ALEErrorSign guifg=#eee8d5 guibg=#dc322f gui=bold cterm=bold
-      hi ALEInfoSign guifg=#eee8d5 guibg=#2aa198 gui=bold cterm=bold
-      hi ALEWarningSign guifg=#eee8d5 guibg=#b58900 gui=bold cterm=bold
+      hi ALEErrorSign guifg=#e9e2cb guibg=#d01b24 gui=bold cterm=bold
+      hi ALEInfoSign guifg=#e9e2cb guibg=#259185 gui=bold cterm=bold
+      hi ALEWarningSign guifg=#e9e2cb guibg=#a57705 gui=bold cterm=bold
     else
-      hi ALEErrorSign guifg=#dc322f guibg=#eee8d5 gui=bold cterm=bold
-      hi ALEInfoSign guifg=#2aa198 guibg=#eee8d5 gui=bold cterm=bold
-      hi ALEWarningSign guifg=#b58900 guibg=#eee8d5 gui=bold cterm=bold
+      hi ALEErrorSign guifg=#d01b24 guibg=#e9e2cb gui=bold cterm=bold
+      hi ALEInfoSign guifg=#259185 guibg=#e9e2cb gui=bold cterm=bold
+      hi ALEWarningSign guifg=#a57705 guibg=#e9e2cb gui=bold cterm=bold
     endif
-    hi ALEErrorSignLineNr guifg=#eee8d5 guibg=#dc322f gui=NONE cterm=NONE
-    hi ALEInfoSignLineNr guifg=#eee8d5 guibg=#2aa198 gui=NONE cterm=NONE
-    hi ALEWarningSignLineNr guifg=#eee8d5 guibg=#b58900 gui=NONE cterm=NONE
+    hi ALEErrorSignLineNr guifg=#e9e2cb guibg=#d01b24 gui=NONE cterm=NONE
+    hi ALEInfoSignLineNr guifg=#e9e2cb guibg=#259185 gui=NONE cterm=NONE
+    hi ALEWarningSignLineNr guifg=#e9e2cb guibg=#a57705 gui=NONE cterm=NONE
   endif
-  hi ALEError guifg=#dc322f guibg=NONE guisp=#dc322f gui=undercurl cterm=undercurl
+  hi ALEError guifg=#d01b24 guibg=NONE guisp=#d01b24 gui=undercurl cterm=undercurl
   hi ALEErrorLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi ALEInfo guifg=#2aa198 guibg=NONE guisp=#2aa198 gui=undercurl cterm=undercurl
+  hi ALEInfo guifg=#259185 guibg=NONE guisp=#259185 gui=undercurl cterm=undercurl
   hi ALEInfoLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi ALEWarning guifg=#b58900 guibg=NONE guisp=#b58900 gui=undercurl cterm=undercurl
+  hi ALEWarning guifg=#a57705 guibg=NONE guisp=#a57705 gui=undercurl cterm=undercurl
   hi ALEWarningLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi! link ALEStyleError ALEError
   hi! link ALEStyleErrorSign ALEErrorSign
@@ -2324,41 +2324,41 @@ if s:t_Co >= 2
 endif
 
 " Background: dark
-" Color: base02   #073642   236      0
-" Color: red      #dc322f   160      1
-" Color: green    #859900   106      2
-" Color: yellow   #b58900   136      3
-" Color: blue     #268bd2   32       4
-" Color: magenta  #d33682   162      5
-" Color: cyan     #2aa198   37       6
-" Color: base2    #eee8d5   254      7
-" Color: base03   #002b36   235      8
-" Color: back     #002b36   235      8
-" Color: orange   #cb4b16   166      9
-" Color: base01   #586e75   242     10
-" Color: base00   #657b83   66      11
-" Color: base0    #839496   246     12
-" Color: violet   #6c71c4   61      13
-" Color: base1    #93a1a1   247     14
+" Color: base02   #002731   236      0
+" Color: red      #d01b24   160      1
+" Color: green    #728905   106      2
+" Color: yellow   #a57705   136      3
+" Color: blue     #2075c7   32       4
+" Color: magenta  #c61b6e   162      5
+" Color: cyan     #259185   37       6
+" Color: base2    #e9e2cb   254      7
+" Color: base03   #001e26   235      8
+" Color: back     #001e26   235      8
+" Color: orange   #bd3612   166      9
+" Color: base01   #465a61   242     10
+" Color: base00   #52676f   66      11
+" Color: base0    #708183   246     12
+" Color: violet   #5856b9   61      13
+" Color: base1    #81908f   247     14
 " Color: base3    #fdf6e3   230     15
 " Term Colors: base02 red    green  yellow blue  magenta cyan  base2
 " Term Colors: base03 orange base01 base00 base0 violet  base1 base3
 " Background: light
-" Color: base2    #073642   236    0
-" Color: red      #dc322f   160    1
-" Color: green    #859900   106    2
-" Color: yellow   #b58900   136    3
-" Color: blue     #268bd2   32     4
-" Color: magenta  #d33682   162    5
-" Color: cyan     #2aa198   37     6
-" Color: base02   #eee8d5   254    7
-" Color: base3    #002b36   235    8
-" Color: orange   #cb4b16   166    9
-" Color: base1    #586e75   242   10
-" Color: base0    #657b83   66    11
-" Color: base00   #839496   246   12
-" Color: violet   #6c71c4   61    13
-" Color: base01   #93a1a1   247   14
+" Color: base2    #002731   236    0
+" Color: red      #d01b24   160    1
+" Color: green    #728905   106    2
+" Color: yellow   #a57705   136    3
+" Color: blue     #2075c7   32     4
+" Color: magenta  #c61b6e   162    5
+" Color: cyan     #259185   37     6
+" Color: base02   #e9e2cb   254    7
+" Color: base3    #001e26   235    8
+" Color: orange   #bd3612   166    9
+" Color: base1    #465a61   242   10
+" Color: base0    #52676f   66    11
+" Color: base00   #708183   246   12
+" Color: violet   #5856b9   61    13
+" Color: base01   #81908f   247   14
 " Color: base03   #fdf6e3   230   15
 " Color: back     #fdf6e3   230   15
 " Term Colors: base2  red    green  yellow blue   magenta cyan   base02
